@@ -76,6 +76,7 @@ body {
     transform: scaleX(0.5);
 }
 
+
 .container-konten {
     display: flex;
     align-items: flex-start;
@@ -105,68 +106,36 @@ body {
 
 .container-gambar {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 0;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10%;
 }
 
 .gambar {
+    border-radius: 30px;
     width: 100%;
     height: 50%;
-    border-radius: 40px;
 }
 
-.container-headquarter {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 0;
+.hamburger {
+    display: none;
+    font-size: 28px;
 }
 
-.text-headquarter {
-    margin-top: 20px;
-    background: linear-gradient(90deg, #9fd3ff, #e6f4ff, #9fd3ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.container-kota {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    ;
-}
-
-.img-kota {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.circle-img {
+.misivisi {
     display: block;
-    width: 180px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.kotabogor {
-    margin-top: 8px;
+    align-items: flex-start;
     background: linear-gradient(90deg, #9fd3ff, #e6f4ff, #9fd3ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 500;
-    font-family: "nunito", sans-serif;
-    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin: 30px;
 }
 
+.h2misivisi{
+    margin-bottom: 15px;
+}
 
 .form {
     display: flex;
@@ -281,25 +250,9 @@ body {
     text-decoration: 0;
 }
 
-footer {
-    background: linear-gradient(90deg, #9fd3ff, #e6f4ff, #9fd3ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin: 10px;
-}
 
-html,
-body {
-    overflow-x: hidden;
-}
+/* mobile */
 
-.hamburger {
-    display: none;
-    font-size: 28px;
-}
-
-/* MOBILE */
 
 @media (max-width: 768px) {
     .hidden {
@@ -327,7 +280,6 @@ body {
         text-align: center;
     }
 }
-
 
 .form {
     display: flex;

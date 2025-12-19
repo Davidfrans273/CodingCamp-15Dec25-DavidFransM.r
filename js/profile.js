@@ -1,17 +1,11 @@
-console.log("hello david");
-// welcome
-userMessage();
+const hamburger = document.getElementById("hamburger");
+const menubar = document.getElementById("menubar");
 
 
-// scroll message us
-function scrollToMessage() {
-    const target = document.getElementById("message-us");
-    if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-    }
-}
+hamburger.addEventListener("click", () => {
+    menubar.classList.toggle("hidden");
+})
 
-// form
 document.getElementById("buttonSubmit").addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -27,12 +21,3 @@ document.getElementById("buttonSubmit").addEventListener("click", function (e) {
     document.getElementById("outputPesan").textContent = `Pesan :` + pesan;
 
 });
-
-// hamburger
-const hamburger = document.getElementById("hamburger");
-const menubar = document.getElementById("menubar");
-
-
-hamburger.addEventListener("click", () => {
-    menubar.classList.toggle("hidden");
-})
